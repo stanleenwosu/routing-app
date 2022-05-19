@@ -1,0 +1,109 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0 none;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  background-color: #ffffff;
+  font-family: "Josefin Sans", Arial, sans-serif;
+  font-style: normal;
+}
+
+/* header container */
+header {
+  position: relative;
+  /* need this to arrange items in header continer with position:absolute */
+  height: 100px;
+  width: 100%;
+  min-width: 800px;
+  background: #cbf3f0;
+  margin: 0;
+}
+
+/* navbar container */
+#mainmenu-navbar {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin-right: 15px;
+}
+
+/* navbar items */
+.main-menu.tab > li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  min-width: 150px;
+  padding: 0.5em;
+  margin: 0px 5px;
+  font-size: 16pt;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.3em;
+}
+
+/* submenu container */
+.dropdown.container {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-menu.tab a {
+  color: #2ec4b6;
+}
+
+.dropdown.container a {
+  color: #ffffff;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+/* main menu items */
+.main-menu.tab > li:hover > a {
+  color: #26a195;
+}
+
+/* submenu title */
+li.dropdown.tab:hover > a {
+  color: #cbf3f0;
+}
+
+/* submenu title background */
+.dropdown.tab:hover {
+  background: #26a195;
+}
+
+/* submenu container */
+.dropdown.tab:hover .dropdown.container {
+  display: block;
+  position: absolute;
+  top: 2.3em;
+  left: 0px;
+  margin-top: -1px;
+  padding: 1em 0em;
+  background: #2ec4b6;
+}
+
+/* submenu items */
+.dropdown.tab:hover li {
+  list-style: none;
+  line-height: 1em;
+  text-align: left;
+  padding: 0.5em;
+  min-width: 150px;
+}
+
+/* submenu item highlight */
+.dropdown.container > li:hover {
+  background: #ff9f1c;
+}
+
+/**** end of header styling ****/
